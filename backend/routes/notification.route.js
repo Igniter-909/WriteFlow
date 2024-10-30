@@ -1,5 +1,6 @@
 import express from 'express';
-import { protectRoute } from '../middlewares/protectRoute.middleware';
+import { protectRoute } from '../middlewares/protectRoute.middleware.js';
+import { getNotifications,deleteNotifications } from '../controllers/notification.controller.js';
 
 const router = express.Router();
 
