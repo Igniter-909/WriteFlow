@@ -11,7 +11,7 @@ import logo from './logo1.png';
 const WFSvg = (props) => {
   return(
 	<div {...props}>
-		<img src={logo} alt="WF Logo"/>;
+		<img src={logo} alt="WF Logo"/>
 	</div>
   ) 
 };
