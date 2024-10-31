@@ -74,7 +74,7 @@ export const getSuggestions = async (req,res) => {
         const suggestedUsers = filterUsers.slice(0,4);
 
         suggestedUsers.forEach((user)=> (user.password=null));
-        res.status(200).json({suggestedUsers});
+        res.status(200).json(suggestedUsers);
     } catch (error) {
         console.log("error occurred in getSuggestions",error.message);
         res.status(500).json({error:error.message});
