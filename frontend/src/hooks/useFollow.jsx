@@ -11,11 +11,11 @@ const useFollow = () => {
                 });
                 const data = await res.json();
                 if(!res.ok){
-                    throw new Error(error.message || "Something went wrong")
+                    throw new Error(data.error || "Something went wrong")
                 };
                 return;
             } catch (error) {
-                throw new Error(error)
+                throw new Error(error.message)
             };
         },
         onSuccess: () => {
